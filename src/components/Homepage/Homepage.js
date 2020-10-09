@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./homepage.css";
 import axios from "axios";
+import Button from "@material-ui/core/Button";
+import SearchIcon from "@material-ui/icons/Search";
+import TextField from "@material-ui/core/TextField";
+
+
 
 const Homepage = () => {
   const [keyword, setKeyword] = useState("");
@@ -34,9 +39,18 @@ const Homepage = () => {
       <div className="home__input-wrapper">
         <form className="home__input-form" onSubmit={clickHandler}>
           <input type="text" name="search" className="home__input" />
-          <button type="submit" className="input__btn">
-            Search
-          </button>
+
+          {/* <TextField
+           onSubmit={clickHandler}
+           variant="standard"
+           type="text"
+           label="Search"
+          ></TextField> */}
+     <Button variant="contained" color="primary" size="small" endIcon={<SearchIcon/>} >
+     Search
+     </Button>
+            
+      
         </form>
       </div>
 
