@@ -1,0 +1,13 @@
+.field {
+    display: flex;
+    padding: 1rem;
+}
+.field__input-form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.field__input {
+    margin-bottom: 1rem;
+}

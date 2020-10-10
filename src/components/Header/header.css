@@ -1,0 +1,18 @@
+.head {
+    display: flex;
+}
+.head__list-container {
+    display: flex;
+    justify-content: space-between;
+    
+   
+}
+
+.head__left{
+    display: flex;
+}
+
+.head__right{
+    display: flex;
+    justify-content: space-evenly;
+}
