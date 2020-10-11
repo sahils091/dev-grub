@@ -1,18 +1,16 @@
 .head {
-    display: flex;
+  display: flex;
 }
 .head__list-container {
-    display: flex;
-    justify-content: space-between;
-    
-   
+  display: flex;
+  justify-content: space-between;
 }
 
-.head__left{
-    display: flex;
+.head__left {
+  display: flex;
 }
 
-.head__right{
-    display: flex;
-    justify-content: space-evenly;
+.head__right {
+  display: flex;
+  justify-content: space-evenly;
 }

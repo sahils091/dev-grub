@@ -5,8 +5,6 @@ import Header from "../Header/Header";
 import Input from "../Input/Input";
 import Dish from "../Dish/Dish";
 
-
-
 const Homepage = () => {
   const [keyword, setKeyword] = useState("");
 
@@ -19,8 +17,9 @@ const Homepage = () => {
       .then((res) => {
         let meal;
         if (res.data.meals === null) {
-          return }else {
-         meal = res.data.meals[0];
+          return;
+        } else {
+          meal = res.data.meals[0];
         }
         setKeyword(meal);
       });
@@ -39,13 +38,13 @@ const Homepage = () => {
 
   return (
     <div className="home">
-    <header>
-    <Header/>
-    </header>
+      <header>
+        <Header />
+      </header>
       <main className="home__main-wrapper">
         <div>
-      <Input clickHandler={clickHandler}/>
-        <Dish keyword={keyword}/>
+          <Input clickHandler={clickHandler} />
+          <Dish keyword={keyword} />
         </div>
       </main>
     </div>
@@ -53,6 +52,3 @@ const Homepage = () => {
 };
 
 export default Homepage;
-
-
-{/* <div className="home__input-wrapper"></div> */}
