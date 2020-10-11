@@ -1,0 +1,31 @@
+.dish {
+    display: flex;
+}
+
+.dish__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.dish__title {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    line-height: 1;
+    }
+
+    .dish__subtitle {
+        margin-bottom: 1.5rem;
+        margin-top: 1rem;
+        line-height: 1; 
+    }
+
+    .dish__img {
+        width: 100%;
+        margin-bottom: 3rem;
+        box-shadow: 7px 8px 12px 0px rgba(0,0,0,0.73);
+        border-radius: 0.3rem;
+    }
+     .dish__blurb {
+         line-height: 32px;
+         line-break: auto;
+     }

@@ -42,9 +42,8 @@ const Homepage = () => {
     <header>
     <Header/>
     </header>
-      <main>
+      <main className="home__main-wrapper">
         <div>
-        
       <Input clickHandler={clickHandler}/>
         <Dish keyword={keyword}/>
         </div>
