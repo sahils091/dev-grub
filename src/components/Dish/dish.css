@@ -29,3 +29,16 @@
   line-height: 32px;
   line-break: auto;
 }
+.dish__link {
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  line-height: 1;
+}
+.dish__link :hover {
+  text-decoration: underline;
+}
+.dish__video {
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  line-height: 1;
+}
