@@ -4,6 +4,7 @@ import axios from "axios";
 import Header from "../Header/Header";
 import Input from "../Input/Input";
 import Dish from "../Dish/Dish";
+import Footer from "../Footer/Footer";
 
 const Homepage = () => {
   const [keyword, setKeyword] = useState("");
@@ -47,6 +48,9 @@ const Homepage = () => {
           <Dish keyword={keyword} />
         </div>
       </main>
+      <footer>
+        <Footer/>
+      </footer>
     </div>
   );
 };
